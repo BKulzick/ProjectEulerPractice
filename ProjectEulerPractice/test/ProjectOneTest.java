@@ -5,7 +5,7 @@ import org.junit.Test;
 public class ProjectOneTest {
 
 	@Test
-	public void ensureThreeIsAMultipleTest() {
+	public void ensureThreeIsAMultipleWhenFourIsGiven() {
 		int expected = 3;
 
 		int actual = ProjectOne.sumOfMultliplesOfThreeAndFive(4);
@@ -13,13 +13,13 @@ public class ProjectOneTest {
 	}
 
 	@Test
-	public void ensureThreeAndFiveIsAMultipleTest() {
+	public void ensureThreeAndFiveIsAMultipleTestWhenSixIsGiven() {
 		int expected = 8;
 
 		int actual = ProjectOne.sumOfMultliplesOfThreeAndFive(6);
 		assertEquals(expected, actual);
 	}
-	
+
 	@Test
 	public void ensureTwentyThreeForSumBelowTen() {
 		int expected = 23;
@@ -27,6 +27,5 @@ public class ProjectOneTest {
 		int actual = ProjectOne.sumOfMultliplesOfThreeAndFive(10);
 		assertEquals(expected, actual);
 	}
-	
 
 }
